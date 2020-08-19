@@ -123,7 +123,7 @@ router.put("/password-update/:id", (req, res) => {
 
 router.post("/doctor-login", (req, res) => {
   if (
-    req.body.email === "test@gmail.com" &&
+    req.body.email === "healthcare@gmail.com" &&
     req.body.password === "Healthcare"
   ) {
     res.json({ success: "Login Successfully!!" });
