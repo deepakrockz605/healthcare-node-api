@@ -13,8 +13,7 @@ app.use(
 );
 
 const mongoURI =
-  "mongodb+srv://deepak:test123@node-login-api-bk3jl.mongodb.net/healthcare?retryWrites=true&w=majority";
-
+"mongodb://healthcare:test123@ds147480.mlab.com:47480/heroku_k0905dcn"
 mongoose
   .connect(mongoURI, {
     useNewUrlParser: true,
