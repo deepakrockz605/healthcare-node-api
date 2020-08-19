@@ -7,13 +7,14 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: "https://healthcare-node-api.herokuapp.com",
+    origin: "http://localhost:3000",
     credentials: true,
   })
 );
 
 const mongoURI =
-"mongodb://healthcare:test123@ds147480.mlab.com:47480/heroku_k0905dcn"
+  "mongodb+srv://deepak:test123@node-login-api-bk3jl.mongodb.net/healthcare?retryWrites=true&w=majority";
+
 mongoose
   .connect(mongoURI, {
     useNewUrlParser: true,
